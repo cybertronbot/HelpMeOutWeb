@@ -3,7 +3,7 @@ import { Button } from "./button/button";
 
 function Hero() {
   return (
-    <div className="flex h-[100vh] ">
+    <div className="flex h-[100vh]">
       <div className="flex flex-1 ">
         <div className="">
           <h1 className="text-[50px] text-secondary font-bold font-sora w-[400px]  leading-[56px] ">

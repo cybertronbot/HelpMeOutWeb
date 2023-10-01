@@ -5,14 +5,18 @@ import Navbar from "./components/Navbar";
 
 import Hero from "./components/Hero";
 import Header from "./components/Header";
+import HowItWorks from "./components/HowItWorks";
+import Footer from "./components/Footer";
 
 function App() {
   return (
-    <div className="w-full overflow-hidden px-6 sm:px-16">
+    <div className="w-full overflow-hidden">
       <Navbar />
 
       <Hero />
       <Header />
+      <HowItWorks/>
+      <Footer/>
     </div>
   );
 }
