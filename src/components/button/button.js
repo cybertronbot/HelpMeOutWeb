@@ -34,7 +34,7 @@ const getVariant = variant => {
           ${getVariant(variant)}  transition duration-75  ${!paddingLess &&
           "px-[18px] py-[14px] "}  ${!square &&
           "rounded-[8px] sm:rounded-[6px] "} active:scale-95 ${className}  ${!iconPresent &&
-            "flex justify-center items-center gap-2"} text-sm font-medium`}
+            "flex justify-center items-center gap-3"} text-sm font-medium font-workSans`}
       >
        
         {children}

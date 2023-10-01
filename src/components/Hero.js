@@ -1,6 +1,7 @@
 import React from "react";
 import { Button } from "./button/button";
 import arrow from "../assets/arrow-right.svg"
+import bg from "../assets/bg.png"
 function Hero() {
   return (
     <div className="h-[100vh]">
@@ -20,15 +21,16 @@ function Hero() {
           </div>
         </div>
         <div className="flex flex-1 h-[448px]">
-          {" "}
+  
           <div>
             <ul class="grid grid-cols-2 grid-rows-4 gap-8 grid-flow-row">
               
               <li class=" bg-primary ">
                 <div class="w-[448px]  h-[200px]"></div>
               </li>
-              <li class="row-span-2 bg-primary ">
+              <li class="row-span-2 bg-primary relative ">
                 <div class="w-[448px] h-[200px]"></div>
+                <img className="absolute -top-[50px] -right-[46px] z-10" src={bg}/>
               </li>
               <li class=" bg-primary ">
                 <div class="w-[448px]  h-[200px]"></div>
@@ -37,6 +39,7 @@ function Hero() {
             </ul>
           </div>
         </div>
+        
       </div>
    
     </div>
