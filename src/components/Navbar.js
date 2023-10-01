@@ -3,10 +3,10 @@ import logo from "../assets/logo.svg";
 function Navbar() {
   return (
     <div>
-      <div className="py-2 flex justify-between items-center h-[84px] px-16">
+      <div className="py-2 flex justify-between items-center h-[84px] px-16 ">
         <div className=" flex gap-2 items-center">
           <img src={logo} alt="logo" />
-          <h4 className="font-bold text-base text-primary bg-[#FFFFFF] font-inter">
+          <h4 className="font-bold text-base text-primary bg-[#00000033] font-inter">
             HelpMeOut
           </h4>
         </div>

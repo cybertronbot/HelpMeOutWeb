@@ -5,7 +5,7 @@ import bg from "../assets/bg.png"
 function Hero() {
   return (
     <div className="h-[100vh]">
-      <div className="flex items-center px-16 py-10">
+      <div className="flex items-center px-16 py-20">
         <div className="flex flex-1 ">
           <div className="">
             <h1 className="text-[50px] text-secondary font-bold font-sora w-[400px]  leading-[56px] ">

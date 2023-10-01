@@ -24,23 +24,23 @@ export const features = [
   {
     id: "feature-1",
     icon: record,
-    title: "Rewards",
+    title: "Simple Screen Recording",
     content:
-      "The best credit cards offer some tantalizing combinations of promotions and prizes",
+      "Effortless screen recording for everyone. Record with ease, no tech expertise required.",
   },
   {
     id: "feature-2",
     icon: send,
-    title: "100% Secured",
+    title: "Easy-to-Share URL",
     content:
-      "We take proactive steps make sure your information and transactions are secure.",
+      "Share your recordings instantly with a single link. No attachments, no downloads.",
   },
   {
     id: "feature-3",
     icon: refresh,
-    title: "Balance Transfer",
+    title: "Revisit Recordings",
     content:
-      "A balance transfer credit card can save you a lot of money in interest charges.",
+      "Access and review your past content effortlessly. Your recordings, always at your fingertips.",
   },
 ];
 export const feedback = [

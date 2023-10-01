@@ -5,17 +5,17 @@ import video from "../assets/video.png";
 function Header() {
   return (
     <div>
-      <div className="">
+      <div className="px-16">
           <h4 className="font-sora text-secondary text-[40px] text-center font-bold">Features</h4>
           <h5 className="font-workSans text-[#616163] text-center text-xl mb-16">Key Highlights of Our Extension</h5>
-        <div className="flex md:flex-row flex-col">
+        <div className="flex md:flex-row  flex-col">
           
-          <div className="flex flex-col justify-center items-start flex-1">
+          <div className="flex flex-col  justify-center items-start flex-1">
             {features.map((item) => {
               return (
                 <li
                   key={item.id}
-                  className="flex flex-row justify-start items-center mb-3 feature-card p-6 rounded-[20px]"
+                  className="flex flex-row justify-start items-start mb-3  p-6 rounded-[20px]"
                 >
                   <div className="p-2 flex justify-center items-center rounded-full bg-primary">
                     <img
