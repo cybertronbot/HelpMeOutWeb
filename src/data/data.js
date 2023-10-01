@@ -71,7 +71,7 @@ export const feedback = [
   ];
   export const footerLinks = [
     {
-      title: "Useful Links",
+      title: "Menu",
       links: [
         {
           name: "Content",
@@ -96,7 +96,7 @@ export const feedback = [
       ],
     },
     {
-      title: "Community",
+      title: "About us",
       links: [
         {
           name: "Help Center",
@@ -121,7 +121,7 @@ export const feedback = [
       ],
     },
     {
-      title: "Partner",
+      title: "Screen Record",
       links: [
         {
           name: "Our Partner",
