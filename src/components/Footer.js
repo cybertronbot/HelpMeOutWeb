@@ -4,8 +4,8 @@ import { footerLinks} from "../data/data"
 
 function Footer() {
   return (
-    <div className='flex justify-center items-center bg-primary px-16 flex-col'>
-      <div className='flex justify-center items-start md:flex-row flex-col mb-8 w-full'>
+    <div className='flex justify-center items-center bg-primary px-16 py-10 flex-col'>
+      <div className='flex justify-center items-start md:flex-row flex-col w-full'>
         <div className='flex-1 flex items-center gap-2 justify-start  mt-10'>
           <img
             src={footerlogo}

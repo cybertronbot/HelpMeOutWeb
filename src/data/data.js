@@ -71,61 +71,51 @@ export const footerLinks = [
     title: "Menu",
     links: [
       {
-        name: "Content",
+        name: "Home",
         link: "https://www.hoobank.com/content/",
       },
       {
-        name: "How it Works",
+        name: "Converter",
         link: "https://www.hoobank.com/how-it-works/",
       },
       {
-        name: "Create",
+        name: "How it Works",
         link: "https://www.hoobank.com/create/",
       },
-      {
-        name: "Explore",
-        link: "https://www.hoobank.com/explore/",
-      },
-      {
-        name: "Terms & Services",
-        link: "https://www.hoobank.com/terms-and-services/",
-      },
+    
     ],
   },
   {
     title: "About us",
     links: [
       {
-        name: "Help Center",
+        name: "About",
         link: "https://www.hoobank.com/help-center/",
       },
       {
-        name: "Partners",
+        name: "Contact Us",
         link: "https://www.hoobank.com/partners/",
       },
       {
-        name: "Suggestions",
+        name: "Privacy Policy",
         link: "https://www.hoobank.com/suggestions/",
       },
-      {
-        name: "Blog",
-        link: "https://www.hoobank.com/blog/",
-      },
-      {
-        name: "Newsletters",
-        link: "https://www.hoobank.com/newsletters/",
-      },
+      
     ],
   },
   {
     title: "Screen Record",
     links: [
       {
-        name: "Our Partner",
+        name: "Browser Window",
         link: "https://www.hoobank.com/our-partner/",
       },
       {
-        name: "Become a Partner",
+        name: "Desktop",
+        link: "https://www.hoobank.com/become-a-partner/",
+      },
+      {
+        name: "Application",
         link: "https://www.hoobank.com/become-a-partner/",
       },
     ],
