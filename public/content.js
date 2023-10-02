@@ -1,65 +1,56 @@
-/* eslint-disable no-undef */
-var recorder = null;
+/* global chrome */
+
+let recorder = null;
+
 function onAccessApproved(stream) {
-	recorder = new MediaRecorder(stream);
-	recorder.start();
+  recorder = new MediaRecorder(stream);
+  var chunks = [];
 
-	recorder.onstop = function () {
-		stream.getTracks().forEach(function (track) {
-			if (track.readyState === 'live') {
-				track.stop();
-			}
-		});
-	};
+  recorder.ondataavailable = function (event) {
+    if (event.data.size > 0) {
+      chunks.push(event.data);
+    }
+  };
 
-	recorder.ondataavailable = function (event) {
-		let recordedBlob = event.data;
-		let url = URL.createObjectURL(recordedBlob);
-        console.log(url);
-		let a = document.createElement('a');
+  recorder.onstop = function () {
+    var combinedBlob = new Blob(chunks, { type: 'video/webm' });
 
-		a.style.display = 'none';
-		a.href = url;
-		a.download = 'screen-recording.webm';
+    var downloadLink = document.createElement("a");
+    downloadLink.href = URL.createObjectURL(combinedBlob);
+    downloadLink.download = 'screen-recording.webm';
+    downloadLink.click();
 
-		document.body.appendChild(a);
-		a.click();
+    // Open the video details page after the file is downloaded
+    window.open('https://help-me-out-web-zeta.vercel.app/video-details', '_blank');
+  };
 
-		document.body.removeChild(a);
+  recorder.start();
 
-		URL.revokeObjectURL(url);
-	};
+  chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
+    if (message.action === "stopvideo") {
+      console.log("stopping video");
+      sendResponse(`processed: ${message.action}`);
+      if (!recorder) return console.log("no recorder");
+
+      recorder.stop();
+    }
+  });
 }
 
 chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
-	if (message.action === 'request_recording') {
-		console.log('requesting recording');
-		sendResponse(`processed: ${message.action}`);
+  if (message.action === "request_recording") {
+    console.log("requesting recording");
 
-		navigator.mediaDevices
-			.getDisplayMedia({
-				audio: true,
-				video: {
-					width: 9999999999,
-					height: 9999999999,
-				},
-			})
-			.then((stream) => {
-				onAccessApproved(stream);
-			});
-	}
+    sendResponse(`processed: ${message.action}`);
 
-	if (message.action === 'stop_recording') {
-		console.log('stopping recording');
-		sendResponse(`stopping: ${message.action}`);
-		if (!recorder) return console.log('no recorder');
-		recorder.stop();
-	}
+    navigator.mediaDevices.getDisplayMedia({
+      audio: true,
+      video: {
+        width: 9999999999,
+        height: 9999999999
+      }
+    }).then((stream) => {
+      onAccessApproved(stream);
+    });
+  }
 });
-
-<div className="grid grid-cols-2 grid-rows-4 gap-8 grid-flow-row">
-<div className="w-[300px] h-[200px] row-span-2 bg-red-500"></div>
-
-<div class="w-[300px]  h-[200px] bg-red-500"></div>
-<div class="w-[300px]  h-[200px] bg-red-500"></div>
-</div>
