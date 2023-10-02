@@ -2,6 +2,7 @@ import React from "react";
 import { Button } from "./button/button";
 import arrow from "../assets/arrow-right.svg"
 import bg from "../assets/bg.png"
+import { Link } from "react-router-dom";
 function Hero() {
   return (
     <div className="h-[100vh]">
@@ -15,9 +16,11 @@ function Hero() {
               Help your friends and loved ones by creating and sending videos on
               how to get things done on a website.
             </p>
+             <Link >
             <Button variant="primary" imgSrc={arrow} imgAlt="google">
-              Install HelpMeOut
+             Install HelpMeOut
             </Button>
+            </Link>
           </div>
         </div>
         <div className="flex flex-1 h-[448px]">
