@@ -23,11 +23,11 @@ function Login() {
                 Join millions of others in sharing successful moves on
                 HelpMeOut.
               </p>
-              <button className="w-[100%] flex justify-center gap-[16px] items-center text-lg h-[48px] border-[1px] border-secondary rounded-[12px] ">
+              <button className="w-[100%] font-inter flex justify-center gap-[16px] items-center text-lg h-[48px] border-[1px] border-secondary rounded-[12px] ">
                 <img src={google} alt="google" />
                 <h5> Login with Google</h5>
               </button>
-              <button className="w-[100%] flex justify-center gap-[16px] items-center text-lg h-[48px] border-[1px] border-secondary text-secondary rounded-[12px] mt-6">
+              <button className="w-[100%] font-inter flex justify-center gap-[16px] items-center text-lg h-[48px] border-[1px] border-secondary text-secondary rounded-[12px] mt-6">
                 <img src={google} alt="google" />
                 <h5> Login with Google</h5>
               </button>

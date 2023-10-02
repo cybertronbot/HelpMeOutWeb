@@ -1,9 +1,10 @@
 import React from "react";
 import logo from "../assets/logo.svg";
-import AuthProfileMenu from "./AuthProfileMenu";
-import Authbutton from "./Authbutton";
-function Navbar() {
-  const isAuthenticated = false;
+import AuthProfileMenu from "../components/AuthProfileMenu";
+import Authbutton from "../components/Authbutton";
+
+function Recorded() {
+  const isAuthenticated = true;
   const isAuthbutton = false;
   return (
     <div>
@@ -18,8 +19,11 @@ function Navbar() {
         <AuthProfileMenu isAuthenticated={isAuthenticated} />
         <Authbutton isAuthbutton={isAuthbutton} />
       </div>
+    <div className="px-16">  <h4 className="font-sora text-secondary text-[28px] font-bold">Hello, John Mark</h4>
+    <h6 className="font-workSans text-secondary">Here are your recorded videos</h6></div>
+
     </div>
   );
 }
 
-export default Navbar;
+export default Recorded;
