@@ -37,8 +37,9 @@ function Login() {
                 Email 
               </label>
               <input
-                className="sm:h-[48px] h-[42px] pl-2 outline-none w-[100%] text-[#FFF] placeholder:text-[#FFF] placeholder:text-sm border-[1px] border-[#B6B3C6] rounded-[12px]"
+                className="sm:h-[48px] h-[42px] pl-2 outline-none w-[100%] text-[#626262F] placeholder:text-[#626262] placeholder:text-sm border-[1px] border-[#B6B3C6] rounded-[12px]"
                 type="text"
+                placeholder="Enter your email address"
               
               />
             </div>
@@ -47,9 +48,9 @@ function Login() {
                Password
               </label>
               <input
-                className="sm:h-[48px] h-[42px] pl-2 outline-none w-[100%] text-[#FFF] placeholder:text-[#FFF] placeholder:text-sm border-[1px] border-[#B6B3C6] rounded-[12px]"
+                className="sm:h-[48px] h-[42px] pl-2 outline-none w-[100%] text-[#626262] placeholder:text-[#626262] placeholder:text-sm border-[1px] border-[#B6B3C6] rounded-[12px]"
                 type="text"
-              
+              placeholder="Enter your Password"
               />
             </div>
        
