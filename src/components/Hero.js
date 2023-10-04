@@ -33,17 +33,25 @@ function Hero() {
                     <div className="flex flex-col justify-between ">
                       <img
                         src={bg2}
-                        className="w-[448px] h-[218px] object-cover rounded-[4px]"
+                        className="w-[448px] h-[218px] object-cover rounded-[6px]"
                       />
                       <img
                         src={bg2}
-                        className="w-[448px] h-[218px] object-cover mt-4"
+                        className="w-[448px] h-[218px] object-cover mt-4 rounded-[6px]"
                       />
                     </div>
+
+                    <div className="relative">
                     <img
                       src={bg2}
-                      className="w-[448px] h-[448px] object-cover"
+                      className="w-[448px] h-[448px] object-cover rounded-[6px] "
                     />
+          
+                    <img
+                      src={bg}
+                      className="absolute -top-[52px] left-[43px] -z-10"
+                    />
+                              </div>
                   </div>
                 </div>
               </div>
