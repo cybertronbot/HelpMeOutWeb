@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import {Link} from "react-router-dom"
 function Authbutton({ isAuthbutton}) {
   return (
     <div>
@@ -11,7 +11,7 @@ function Authbutton({ isAuthbutton}) {
           {" "}
           <div>
             <button className="font-sora text-base text-primary">
-              Get Started
+          <Link to="/auth/login">    Get Started</Link>
             </button>
           </div>
         
