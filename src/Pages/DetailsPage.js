@@ -42,9 +42,13 @@ const DetailsPage = () => {
             </div>
 
             <div className="mt-10">
-              <p className="text-sora text-secondary mb-2 font-semibold">Video Url</p>
+              <p className="text-sora text-secondary mb-2 font-semibold">
+                Video Url
+              </p>
               <div className="rounded-[16px] flex justify-between items-center border border-[#929292] h-[60px] w-[500px] px-3  ">
-                <p className="text-sm font-sora">https://www.helpmeout/Untitled_Video_20232509</p>
+                <p className="text-sm font-sora">
+                  https://www.helpmeout/Untitled_Video_20232509
+                </p>
                 <button className="font-sora border border-[#120B48] px-[14px] py-[8px]  rounded-[8px] cursor-pointer text-sm flex gap-2">
                   <img className="" src={Copy} alt="" />
                   Copy
@@ -70,18 +74,29 @@ const DetailsPage = () => {
               </div>
             </div>
           </div>
-          <div className="h-[600px] mx-2"></div>
+         
           <div>Video</div>
         </section>
-        <div className="flex justify-center items-center flex-col gap-7">
-          <h4 className="text-center text-secondary font-sora text-[20px] font-semibold">To ensure the availability and privacy of your video,<br/>
-           we recommend saving it to your account.</h4>
-           <Button  variant="primary"
-           paddingLess="true" className="px-5 py-[10px]">Save Video</Button>
-           <h4 className="text-primary font-sora font-semibold text-[22px] mb-7"><span className="text-[#7E7E7E]">Don’t have an account?</span> Create account</h4>
+        <div className="flex justify-center items-center flex-col gap-7 mt-7">
+          <h4 className="text-center text-secondary font-sora text-[20px] font-semibold">
+            To ensure the availability and privacy of your video,
+            <br />
+            we recommend saving it to your account.
+          </h4>
+          <Button
+            variant="primary"
+            paddingLess="true"
+            className="px-5 py-[10px]"
+          >
+            Save Video
+          </Button>
+          <h4 className="text-primary font-sora font-semibold text-[22px] mb-7">
+            <span className="text-[#7E7E7E]">Don’t have an account?</span>{" "}
+            Create account
+          </h4>
         </div>
         <div className="bg-[#DEE1E6] w-[100%] h-[50px] " />
-        <Footer/>
+        <Footer />
       </div>
     </>
   );
