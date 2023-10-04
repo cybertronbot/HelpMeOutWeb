@@ -29,7 +29,7 @@ function Recorded() {
           Here are your recorded videos
         </h6>
       </div>
-      <div className="flex md:flex-row  flex-col">
+      <div className="flex md:flex-row  flex-col px-16">
         <div className="flex flex-col flex-1 justify-center items-start ">
           <img src={video} />
         </div>
