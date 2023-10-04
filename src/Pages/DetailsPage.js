@@ -31,10 +31,10 @@ const DetailsPage = () => {
             <div className="rounded-[16px] flex items-center bg-[#dcdcdf] h-[60px] w-[500px] px-4 mt-14">
               <input
                 type="text"
-                className="w-full h-full p-2 outline-none bg-[#b6b3c620] text-sm placeholder-black placeholder:text-sm"
+                className="w-full h-full p-2 outline-none bg-[#b6b3c620] text-sm placeholder-black placeholder:text-sm font-sora"
                 placeholder="Enter email of receiver"
               />
-              <button className=" bg-[#605C84] px-[16px] py-[8px] text-white rounded-[8px] cursor-pointer">
+              <button className=" bg-[#605C84] px-[16px] py-[8px] text-white rounded-[8px] cursor-pointer font-sora">
                 Send
               </button>
             </div>
@@ -42,8 +42,8 @@ const DetailsPage = () => {
             <div className="mt-10">
               <p>Video Url</p>
               <div className="rounded-[16px] flex justify-between items-center border border-[#929292] h-[60px] w-[500px] px-4 ">
-                <p className="text-sm">https://www.helpmeout/Untitled_Video_20232509</p>
-                <button className="border border-[#120B48] px-[16px] py-[8px]  rounded-[8px] cursor-pointer flex gap-2">
+                <p className="text-sm font-sora">https://www.helpmeout/Untitled_Video_20232509</p>
+                <button className="font-sora border border-[#120B48] px-[16px] py-[8px]  rounded-[8px] cursor-pointer flex gap-2">
                   <img src={Copy} alt="" />
                   Copy
                 </button>
