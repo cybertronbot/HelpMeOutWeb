@@ -84,11 +84,11 @@ const DetailsPage = () => {
             <div>
               <img className="rounded-[8px]" src={video1} />
             </div>
-            <div className="flex justify-between items-center py-3 px-8">
+            <div className="flex justify-between items-center py-3 px-8 mt-3">
               <h5>0:30 / 3:00</h5>
               <div className="flex items-center gap-10">
                 <div className="flex flex-col items-center">
-                  <img  className="w-[24px]" src={play} />
+                  <img className="w-[24px]" src={play} />
                   <h6>Play</h6>
                 </div>
                 <div className="flex flex-col items-center">
@@ -101,7 +101,22 @@ const DetailsPage = () => {
                 </div>
               </div>
             </div>
+            <div className="flex flex-col gap-6 mt-5">
+              <div className="flex gap-5">
+                <h5>0.10</h5>
+                <h5>First step. Open Facebook on your desktop or mobile device and locate "Marketplace" in the left-hand menu or at the top of the</h5>
+              </div>
+              <div className="flex gap-5">
+                <h5>0.10</h5>
+                <h5>First step. Open Facebook on your desktop or mobile device and locate "Marketplace" in the left-hand menu or at the top of the</h5>
+              </div>
+              <div className="flex gap-5">
+                <h5>0.10</h5>
+                <h5>First step. Open Facebook on your desktop or mobile device and locate "Marketplace" in the left-hand menu or at the top of the</h5>
+              </div>
+            </div>
           </div>
+     
         </section>
         <div className="flex justify-center items-center flex-col gap-7 mt-32">
           <h4 className="text-center text-secondary font-sora text-[20px] font-semibold">
