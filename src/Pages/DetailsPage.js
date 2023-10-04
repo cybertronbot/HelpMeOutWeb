@@ -1,5 +1,7 @@
 import React from "react";
-
+import play from "../assets/play.png";
+import volume from "../assets/volume.png";
+import setting from "../assets/setting.png";
 import Edit from "../assets/edit.svg";
 import Copy from "../assets/copy.svg";
 import Facebook from "../assets/Facebook.svg";
@@ -8,7 +10,7 @@ import Telegram from "../assets/telegram.svg";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import { Button } from "../components/button/button";
-import  video1  from "../assets/video1.png";
+import video1 from "../assets/video1.png";
 
 const DetailsPage = () => {
   return (
@@ -79,8 +81,25 @@ const DetailsPage = () => {
           </div>
 
           <div className="col-span-4 ">
-            <div >
+            <div>
               <img className="rounded-[8px]" src={video1} />
+            </div>
+            <div className="flex justify-between items-center py-3 px-8">
+              <h5>0:30 / 3:00</h5>
+              <div className="flex items-center gap-10">
+                <div className="flex flex-col items-center">
+                  <img  className="w-[24px]" src={play} />
+                  <h6>Play</h6>
+                </div>
+                <div className="flex flex-col items-center">
+                  <img className="w-[24px]" src={volume} />
+                  <h6>Volume</h6>
+                </div>
+                <div className="flex flex-col items-center">
+                  <img className="w-[24px]" src={setting} />
+                  <h6>Settings</h6>
+                </div>
+              </div>
             </div>
           </div>
         </section>
