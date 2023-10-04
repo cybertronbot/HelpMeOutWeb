@@ -9,7 +9,7 @@ import { Link } from "react-router-dom";
 function Hero() {
   return (
     <div className="">
-      <div className="flex items-center px-16 py-20">
+      <div className="flex items-center px-16 py-20 bg-[#DEE1E6]">
         <div className="flex flex-1 ">
           <div className="">
             <h1 className="text-[50px] text-secondary font-bold font-sora w-[400px]  leading-[56px] ">
