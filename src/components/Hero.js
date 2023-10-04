@@ -2,7 +2,9 @@ import React from "react";
 import { Button } from "./button/button";
 import arrow from "../assets/arrow-right.svg";
 import bg from "../assets/bg.png";
+import bg1 from "../assets/bg1.png";
 import bg2 from "../assets/bg2.png";
+import bg3 from "../assets/bg3.png";
 import { Link } from "react-router-dom";
 function Hero() {
   return (
@@ -32,12 +34,12 @@ function Hero() {
                   <div className="flex gap-5">
                     <div className="flex flex-col justify-between ">
                       <img
-                        src={bg2}
+                        src={bg3}
                         className="w-[448px] h-[214px] object-cover rounded-[6px]"
                       />
                         <div className="relative">
                       <img
-                        src={bg2}
+                        src={bg1}
                         className="w-[448px] h-[214px] object-cover rounded-[6px] "
                       />
 
