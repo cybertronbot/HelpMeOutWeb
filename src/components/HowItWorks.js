@@ -1,5 +1,6 @@
 import React from "react";
 import { feedback } from "../data/data";
+import works from "../assets/works.svg"
 function HowItWorks() {
   return (
     <div className="mt-48 px-16">
@@ -19,6 +20,9 @@ function HowItWorks() {
               <p className="font-workSans font-normal text-base text-center leading-[30px] text-[#616163] my-4">
                 {item.content}
               </p>
+              <div>
+                <img src={works}/>
+              </div>
             </div>
           );
         })}
