@@ -6,6 +6,8 @@ import Facebook from "../assets/Facebook.svg";
 import Whatsapp from "../assets/whatsapp.svg";
 import Telegram from "../assets/telegram.svg";
 import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
+import { Button } from "../components/button/button";
 
 const DetailsPage = () => {
   return (
@@ -20,9 +22,9 @@ const DetailsPage = () => {
                 Your video is ready!
               </h1>
             </div>
-            <p className="font-sora text-[#727272] ">Name</p>
+            <p className="font-sora text-[#727272] mt-4">Name</p>
             <div className="flex gap-6 items-center">
-              <p className="font-semibold text-[#413C6D] font-sora text-[20px]">
+              <p className="font-semibold text-[#413C6D] font-sora text-[18px]">
                 Untitled_Video_20232509
               </p>
               <img src={Edit} alt="edit-icon" />
@@ -40,37 +42,46 @@ const DetailsPage = () => {
             </div>
 
             <div className="mt-10">
-              <p className="text-sora text-secondary mb-2">Video Url</p>
+              <p className="text-sora text-secondary mb-2 font-semibold">Video Url</p>
               <div className="rounded-[16px] flex justify-between items-center border border-[#929292] h-[60px] w-[500px] px-3  ">
                 <p className="text-sm font-sora">https://www.helpmeout/Untitled_Video_20232509</p>
-                <button className="font-sora border border-[#120B48] px-[16px] py-[8px]  rounded-[8px] cursor-pointer text-sm flex gap-2">
+                <button className="font-sora border border-[#120B48] px-[14px] py-[8px]  rounded-[8px] cursor-pointer text-sm flex gap-2">
                   <img className="" src={Copy} alt="" />
                   Copy
                 </button>
               </div>
             </div>
 
-            <div className="mt-12 ">
+            <div className="mt-12 text-[14px] font-semibold">
               <p className="mb-2">Share your video</p>
               <div className="flex items-center gap-4 font-inter">
-                <button className="rounded-lg border-2 px-4 flex py-3 gap-1">
+                <button className="rounded-lg border-2 px-4 flex py-[8px] gap-1">
                   <img src={Facebook} alt="" />
                   Facebook
                 </button>
-                <button className="rounded-lg border-2 px-4 flex py-3 gap-1">
+                <button className="rounded-lg border-2 px-4 flex py-[8px] gap-1">
                   <img src={Whatsapp} alt="" />
                   Whatsapp
                 </button>
-                <button className="rounded-lg border-2 px-4 flex py-3 gap-1">
+                <button className="rounded-lg border-2 px-4 flex py-[8px]  gap-1">
                   <img src={Telegram} alt="" />
                   Telegram
                 </button>
               </div>
             </div>
           </div>
-          <div className="h-[600px] border border-y border-black mx-2"></div>
+          <div className="h-[600px] mx-2"></div>
           <div>Video</div>
         </section>
+        <div className="flex justify-center items-center flex-col gap-7">
+          <h4 className="text-center text-secondary font-sora text-[20px] font-semibold">To ensure the availability and privacy of your video,<br/>
+           we recommend saving it to your account.</h4>
+           <Button  variant="primary"
+           paddingLess="true" className="px-5 py-[10px]">Save Video</Button>
+           <h4 className="text-primary font-sora font-semibold text-[22px] mb-7"><span className="text-[#7E7E7E]">Don’t have an account?</span> Create account</h4>
+        </div>
+        <div className="bg-[#DEE1E6] w-[100%] h-[50px] " />
+        <Footer/>
       </div>
     </>
   );

@@ -3,7 +3,9 @@ import { feedback } from "../data/data";
 import works from "../assets/works.svg"
 function HowItWorks() {
   return (
-    <div className="mt-48 px-16">
+   <div>
+       <div className="bg-[#DEE1E6] w-[100%] h-[50px] mt-10" />
+     <div className="mt-16 px-16">
       <h4 className="font-sora text-secondary text-[40px] text-center font-bold">
         How it works
       </h4>
@@ -29,6 +31,7 @@ function HowItWorks() {
       </div>
       
     </div>
+   </div>
   );
 }
 
