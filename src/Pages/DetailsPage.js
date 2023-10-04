@@ -101,17 +101,26 @@ const DetailsPage = () => {
                 </div>
               </div>
             </div>
+            <div>
+            <h4 className=" text-secondary font-sora text-[20px] font-semibold">
+            Transcript
+          </h4>
+          <div className="w-[150px] h-[35px] border border-[#CFCFCF] rounded flex justify-between items-center px-3 mt-4 mb-2">
+            <h5 className="text-[#CFCFCF] text-base">English</h5>
+          </div>
+
+            </div>
             <div className="flex flex-col gap-6 mt-5">
-              <div className="flex gap-5">
+              <div className="flex gap-5 font-inter">
                 <h5>0.10</h5>
+                <h5 className="">First step. Open Facebook on your desktop or mobile device and locate "Marketplace" in the left-hand menu or at the top of the</h5>
+              </div>
+              <div className="flex gap-5 font-inter">
+                <h5>0.15</h5>
                 <h5>First step. Open Facebook on your desktop or mobile device and locate "Marketplace" in the left-hand menu or at the top of the</h5>
               </div>
-              <div className="flex gap-5">
-                <h5>0.10</h5>
-                <h5>First step. Open Facebook on your desktop or mobile device and locate "Marketplace" in the left-hand menu or at the top of the</h5>
-              </div>
-              <div className="flex gap-5">
-                <h5>0.10</h5>
+              <div className="flex gap-5 font-inter">
+                <h5>0.30</h5>
                 <h5>First step. Open Facebook on your desktop or mobile device and locate "Marketplace" in the left-hand menu or at the top of the</h5>
               </div>
             </div>
