@@ -91,7 +91,7 @@ const DetailsPage = () => {
             Save Video
           </Button>
           <h4 className="text-primary font-sora font-semibold text-[22px] mb-7">
-            <span className="text-[#7E7E7E]">Don’t have an account?</span>{" "}
+            <span className="text-[#7E7E7E]">Don’t have an account?</span>
             Create account
           </h4>
         </div>
