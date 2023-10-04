@@ -28,7 +28,7 @@ const DetailsPage = () => {
               <img src={Edit} alt="edit-icon" />
             </div>
 
-            <div className="rounded-[16px] flex items-center bg-[#dcdcdf] h-[60px] w-[500px] px-4 mt-14">
+            <div className="rounded-[16px] flex items-center bg-[#dcdcdf] h-[60px] w-[500px] px-3 mt-14">
               <input
                 type="text"
                 className="w-full h-full p-2 outline-none bg-[#b6b3c620] text-sm placeholder-black placeholder:text-sm font-sora"
@@ -40,19 +40,19 @@ const DetailsPage = () => {
             </div>
 
             <div className="mt-10">
-              <p>Video Url</p>
-              <div className="rounded-[16px] flex justify-between items-center border border-[#929292] h-[60px] w-[500px] px-4 ">
+              <p className="text-sora text-secondary mb-2">Video Url</p>
+              <div className="rounded-[16px] flex justify-between items-center border border-[#929292] h-[60px] w-[500px] px-3  ">
                 <p className="text-sm font-sora">https://www.helpmeout/Untitled_Video_20232509</p>
-                <button className="font-sora border border-[#120B48] px-[16px] py-[8px]  rounded-[8px] cursor-pointer flex gap-2">
-                  <img src={Copy} alt="" />
+                <button className="font-sora border border-[#120B48] px-[16px] py-[8px]  rounded-[8px] cursor-pointer text-sm flex gap-2">
+                  <img className="" src={Copy} alt="" />
                   Copy
                 </button>
               </div>
             </div>
 
-            <div>
-              <p>Share your video</p>
-              <div className="flex items-center gap-4">
+            <div className="mt-12 ">
+              <p className="mb-2">Share your video</p>
+              <div className="flex items-center gap-4 font-inter">
                 <button className="rounded-lg border-2 px-4 flex py-3 gap-1">
                   <img src={Facebook} alt="" />
                   Facebook
