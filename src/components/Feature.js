@@ -5,7 +5,7 @@ import video from "../assets/video.png";
 function Feature() {
   return (
     <div>    <div>
-    <div className="px-16">
+    <div className="px-16 mt-48">
         <h4 className="font-sora text-secondary text-[40px] text-center font-bold">Features</h4>
         <h5 className="font-workSans text-[#616163] text-center text-xl mb-16">Key Highlights of Our Extension</h5>
       <div className="flex md:flex-row  flex-col">
