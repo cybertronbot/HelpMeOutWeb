@@ -5,35 +5,36 @@ import Copy from "../assets/copy.svg";
 import Facebook from "../assets/Facebook.svg";
 import Whatsapp from "../assets/whatsapp.svg";
 import Telegram from "../assets/telegram.svg";
-import Navbar from "../components/Navbar"
+import Navbar from "../components/Navbar";
 
 const DetailsPage = () => {
   return (
     <>
       <div clsssName="">
-       <Navbar/>
+        <Navbar />
 
-        <section className="flex px-16 mt-20">
-          <div className="flex flex-col gap-10 w-[700px]">
+        <section className="flex px-16 mt-10">
+          <div className="flex flex-col  w-[700px]">
             <div>
-              <h1 className="font-bold text-5xl text-[#141414]">
+              <h1 className="font-bold text-[40px] text-secondary font-sora">
                 Your video is ready!
               </h1>
-              <p>name</p>
             </div>
-
-            <div className="flex items-center">
-              <p>Untitled_Video_20232509</p>
+            <p className="font-sora text-[#727272] ">Name</p>
+            <div className="flex gap-6 items-center">
+              <p className="font-semibold text-[#413C6D] font-sora text-[20px]">
+                Untitled_Video_20232509
+              </p>
               <img src={Edit} alt="edit-icon" />
             </div>
 
-            <div className="rounded-lg flex bg-[#dcdcdf] p-4 w-[500px]">
+            <div className="rounded-[16px] flex items-center bg-[#dcdcdf] h-[60px] w-[500px] px-4 mt-14">
               <input
                 type="text"
-                className="w-full p-2 outline-none bg-[#b6b3c620] placeholder-black"
+                className="w-full h-full p-2 outline-none bg-[#b6b3c620] placeholder-black"
                 placeholder="Enter email of receiver"
               />
-              <button className="px-4 bg-[#605C84] text-white rounded cursor-pointer">
+              <button className=" bg-[#605C84] w-[90px] h-[40px] text-white rounded-[8px] cursor-pointer">
                 Send
               </button>
             </div>
