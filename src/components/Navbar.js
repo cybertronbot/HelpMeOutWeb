@@ -9,8 +9,8 @@ function Navbar() {
   return (
     <div>
       <div className="py-2 flex justify-between w-[100%] items-center h-[84px] px-16 ">
-        <div className=" flex gap-2 items-center">
-         <Link to="/">
+        <div >
+         <Link to="/" className=" flex gap-2 items-center">
          <img src={logo} alt="logo" />
           <h4 className="font-bold text-base text-primary  font-inter">
             HelpMeOut
