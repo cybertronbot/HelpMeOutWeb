@@ -1,11 +1,12 @@
 import React from "react";
 import { Button } from "./button/button";
-import arrow from "../assets/arrow-right.svg"
-import bg from "../assets/bg.png"
+import arrow from "../assets/arrow-right.svg";
+import bg from "../assets/bg.png";
+import bg2 from "../assets/bg2.png";
 import { Link } from "react-router-dom";
 function Hero() {
   return (
-    <div className="h-[100vh]">
+    <div className="">
       <div className="flex items-center px-16 py-20">
         <div className="flex flex-1 ">
           <div className="">
@@ -16,35 +17,40 @@ function Hero() {
               Help your friends and loved ones by creating and sending videos on
               how to get things done on a website.
             </p>
-             <Link >
-            <Button variant="primary" imgSrc={arrow} imgAlt="google">
-             Install HelpMeOut
-            </Button>
+            <Link>
+              <Button variant="primary" imgSrc={arrow} imgAlt="google">
+                Install HelpMeOut
+              </Button>
             </Link>
           </div>
         </div>
         <div className="flex flex-1 h-[448px]">
-  
           <div>
-            <ul class="grid grid-cols-2 grid-rows-4 gap-8 grid-flow-row">
-              
-              <li class=" bg-primary ">
-                <div class="w-[448px]  h-[200px]"></div>
-              </li>
-              <li class="row-span-2 bg-primary relative ">
-                <div class="w-[448px] h-[200px]"></div>
-                <img className="absolute -top-[50px] -right-[46px] z-10" src={bg}/>
-              </li>
-              <li class=" bg-primary ">
-                <div class="w-[448px]  h-[200px]"></div>
-              </li>
-             
-            </ul>
+            <div className="flex flex-1 h-[448px]">
+              <div>
+                <div className="flex flex-1 h-[448px]">
+                  <div className="flex gap-3">
+                    <div className="flex flex-col justify-between ">
+                      <img
+                        src={bg2}
+                        className="w-[448px] h-[218px] object-cover rounded-[4px]"
+                      />
+                      <img
+                        src={bg2}
+                        className="w-[448px] h-[218px] object-cover mt-4"
+                      />
+                    </div>
+                    <img
+                      src={bg2}
+                      className="w-[448px] h-[448px] object-cover"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-        
       </div>
-   
     </div>
   );
 }

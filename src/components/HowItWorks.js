@@ -23,6 +23,7 @@ function HowItWorks() {
           );
         })}
       </div>
+      
     </div>
   );
 }
