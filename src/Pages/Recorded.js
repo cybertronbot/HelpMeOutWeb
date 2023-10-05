@@ -25,17 +25,22 @@ function Recorded() {
         <h4 className="font-sora text-secondary text-[28px] font-bold">
           Hello, John Mark
         </h4>
-        <h6 className="font-workSans text-secondary">
+        <h6 className="font-workSans text-secondary my-2">
           Here are your recorded videos
         </h6>
       </div>
-      <div className="flex md:flex-row  flex-col px-16">
-        <div className="flex flex-col flex-1 justify-center items-start ">
+      <div className="flex md:flex-row  gap-10 flex-col px-16">
+       
+        <div className="  ">
           <img src={video} />
         </div>
-        <div className="flex flex-col flex-1 justify-center items-start ">
+        <div className="">
           <img src={video} />
         </div>
+       
+      </div>
+      <div>
+        
       </div>
     </div>
   );
