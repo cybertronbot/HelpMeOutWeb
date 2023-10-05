@@ -12,7 +12,7 @@ function HowItWorks() {
       <div className="flex flex-wrap justify-between w-full  z-[1] relative">
         {feedback.map((item) => {
           return (
-            <div className=" px-10 py-12 flex justify-center items-center flex-col max-w-[370px] my-5">
+            <div className=" sm:px-10 py-12 flex justify-center items-center flex-col max-w-[370px] my-5">
               <div className="p-2 flex justify-center items-center rounded-full w-[60px] h-[60px] bg-primary">
                 <h6 className="text-[28px] font-bold text-[#FFF] font-inter">{item.step}</h6>
               </div>
