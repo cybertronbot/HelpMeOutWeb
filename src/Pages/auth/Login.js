@@ -5,9 +5,9 @@ import or from "../../assets/or.png";
 function Login() {
   return (
     <div>
-      <div className="sm:px-16 px-6 sm:py-10 py-5">
+      <div className="sm:px-16 px-6 sm:py-10 py-6">
         {" "}
-        <div className=" flex gap-2 items-center">
+        <div className=" flex gap-2 items-center sm:mb-0 mb-10">
           <img src={logo} alt="logo" />
           <h4 className="font-bold text-base text-primary  font-inter">
             HelpMeOut
