@@ -5,7 +5,7 @@ import or from "../../assets/or.png";
 function Login() {
   return (
     <div>
-      <div className="px-16 py-10">
+      <div className="sm:px-16 px-6 sm:py-10 py-5">
         {" "}
         <div className=" flex gap-2 items-center">
           <img src={logo} alt="logo" />
@@ -14,7 +14,7 @@ function Login() {
           </h4>
         </div>
         <div className="w-[100%] flex justify-center items-center">
-          <div className=" w-[35%] h-[80vh] flex justify-center  ">
+          <div className=" sm:w-[35%] w-[100%] h-[80vh] flex justify-center  ">
             <form>
               <h4 className="text-secondary font-inter font-bold text-[26px] text-center mb-2">
                 Log in or Sign up
