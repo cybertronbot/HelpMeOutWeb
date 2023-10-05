@@ -9,11 +9,11 @@ import { Link } from "react-router-dom";
 function Hero() {
   return (
     <div className="">
-      <div className="flex items-center px-16 py-20 ">
+      <div className="flex sm:flex-row flex-col items-center sm:px-16 px-6 py-20 ">
         <div className="flex flex-1 ">
           <div className="">
-            <h1 className="text-[50px] text-secondary font-bold font-sora w-[400px]  leading-[56px] ">
-              Show Them Don’t Just Tell
+            <h1 className="sm:text-[50px] text-[40px] text-secondary font-bold font-sora w-[400px]  leading-[56px] ">
+              Show Them <br className="sm:hidden flex"/> Don’t Just Tell
             </h1>
             <p className="text-[rgba(0, 0, 0, 0.75)] font-inter text-base w-[400px] mb-10 mt-5 ">
               Help your friends and loved ones by creating and sending videos on
