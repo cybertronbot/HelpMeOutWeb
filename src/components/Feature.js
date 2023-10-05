@@ -21,7 +21,7 @@ function Feature() {
                 return (
                   <li
                     key={item.id}
-                    className="flex flex-row justify-start items-start mb-3  p-6 rounded-[20px]"
+                    className="flex flex-row justify-start items-start mb-3  sm:p-6 py-5 rounded-[20px]"
                   >
                     <div className="p-2 flex justify-center items-center rounded-full bg-primary">
                       <img
