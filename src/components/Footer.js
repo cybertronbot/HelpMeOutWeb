@@ -4,7 +4,7 @@ import { footerLinks} from "../data/data"
 
 function Footer() {
   return (
-    <div className='flex justify-center items-center bg-primary px-16 py-10 flex-col'>
+    <div className='flex justify-center items-center bg-primary px-6 sm:px-16 sm:py-10 flex-col'>
       <div className='flex justify-center items-start md:flex-row flex-col w-full'>
         <div className='flex-1 flex items-center gap-2 justify-start  mt-10'>
           <img

@@ -5,8 +5,8 @@ function HowItWorks() {
   return (
    <div>
        <div className="bg-[#DEE1E6] w-[100%] h-[50px] mt-10" />
-     <div className="mt-16 px-16">
-      <h4 className="font-sora text-secondary text-[40px] text-center font-bold">
+     <div className="mt-16 px-6 sm:px-16">
+      <h4 className="font-sora text-secondary text-[30px] sm:text-[40px] text-center font-bold">
         How it works
       </h4>
       <div className="flex flex-wrap justify-between w-full  z-[1] relative">

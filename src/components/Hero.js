@@ -12,7 +12,7 @@ function Hero() {
       <div className="flex sm:flex-row flex-col items-center sm:px-16 px-6 py-20 ">
         <div className="flex flex-1 ">
           <div className="">
-            <h1 className="sm:text-[50px] text-[40px] text-secondary font-bold font-sora sm:w-[400px] w-[100%]  leading-[56px] ">
+            <h1 className="sm:text-[50px] text-[40px] text-secondary font-bold font-sora sm:w-[400px] w-[100%] leading-[40px]  sm:leading-[56px] ">
               Show Them <br className="sm:hidden flex"/> Don’t Just Tell
             </h1>
             <p className="text-[rgba(0, 0, 0, 0.75)] font-inter text-base sm:w-[400px] w-[100%] mb-10 mt-5 ">
