@@ -7,9 +7,9 @@ function Feature() {
     <div>
         <div className="bg-[#DEE1E6] w-[100%] h-[50px] mt-10" />
       <div>
-        <div className="px-16 mt-16 ">
+        <div className="sm:px-16 px-6 mt-16 ">
         
-          <h4 className="font-sora text-secondary text-[40px] text-center font-bold">
+          <h4 className="font-sora text-secondary sm:text-[40px] text-[30px] text-center font-bold">
             Features
           </h4>
           <h5 className="font-workSans text-[#616163] text-center text-xl mb-16">
