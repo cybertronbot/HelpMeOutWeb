@@ -8,7 +8,8 @@ import DetailsPage from "./Pages/DetailsPage";
 
 function App() {
   return (
-    <Router>
+
+    <Router >
     <Routes>
       <Route path="/" exact  element={<Home/>}/>
       

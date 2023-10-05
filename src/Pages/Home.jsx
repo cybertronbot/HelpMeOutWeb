@@ -7,7 +7,7 @@ import Footer from "../components/Footer";
 
 function Home() {
   return (
-    <div className="">
+    <div className="overflow-y-hidden">
       <Navbar />
       <Hero />
       <Feature />
